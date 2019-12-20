@@ -1,7 +1,8 @@
 def my_collect(languages)
   i=0
   capitzlized_languages= [ ]
-  while i<languages.length 
+  while i<languages.length do |lang|
+    lang.upcase 
   capitzlized_languages<< yield(languages[i])
   i+=1 
 end 
